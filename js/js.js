@@ -54,9 +54,13 @@ function calcularValorDaCompra(valorDaCompra, possuiOuNaoConvenio, compraOuNaoCo
 
 /*resultados dos testes*/
 
-console.log(calcularValorDaCompra(100, true, true)); // 15
-console.log(calcularValorDaCompra(100, true, false)); // 10
 console.log(calcularValorDaCompra(100,false,false)); // 0
+
+console.log(' Seu desconto é de R$ ' + (100 - calcularValorDaCompra(100, true, true)));
+console.log('Sua compra foi de R$ ' + calcularValorDaCompra(100, true, true));
+console.log(' Seu desconto é de R$' + (100 - calcularValorDaCompra(100, true, false)));
+console.log(' Sua compra foi de R$ ' + calcularValorDaCompra(100, true, false));
+console.log(' Você não teve descontos e sua compra foi de R$' + (100 - calcularValorDaCompra(100, false, false)));
 
 /* Função para encontrar o ano mais próximo */
 
@@ -64,7 +68,6 @@ const anos = ['2012', '2010', '2020', '2022', '2035', '2045'];
 function encontrarAno(ano){ 
     
     const resultado = [];
-    
     for(let i = 0; i < anos.length; i++){
         if(anos[i] <= ano){
 
