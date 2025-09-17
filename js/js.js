@@ -56,11 +56,11 @@ function calcularValorDaCompra(valorDaCompra, possuiOuNaoConvenio, compraOuNaoCo
 
 console.log(calcularValorDaCompra(100,false,false)); // 0
 
-console.log(' Seu desconto é de R$ ' + (100 - calcularValorDaCompra(100, true, true)));
-console.log('Sua compra foi de R$ ' + calcularValorDaCompra(100, true, true));
-console.log(' Seu desconto é de R$' + (100 - calcularValorDaCompra(100, true, false)));
-console.log(' Sua compra foi de R$ ' + calcularValorDaCompra(100, true, false));
-console.log(' Você não teve descontos e sua compra foi de R$' + (100 - calcularValorDaCompra(100, false, false)));
+console.log(' Seu desconto é de R$ ' + (100 - calcularValorDaCompra(100, true, true)));// 15
+console.log('Sua compra foi de R$ ' + calcularValorDaCompra(100, true, true)); // 85
+console.log(' Seu desconto é de R$' + (100 - calcularValorDaCompra(100, true, false))); // 10
+console.log(' Sua compra foi de R$ ' + calcularValorDaCompra(100, true, false)); // 90
+console.log(' Você não teve descontos e sua compra foi de R$' + (100 - calcularValorDaCompra(100, false, false)));// 100
 
 /* Função para encontrar o ano mais próximo */
 
