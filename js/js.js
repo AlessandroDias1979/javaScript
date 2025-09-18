@@ -76,4 +76,18 @@ function encontrarAno(ano){
     } 
     return resultado;
 }
+
+function encotrarAnoReverso(anoReverso){
+
+    const resultado = [];
+    for(let i = 0; i < anos.length; i++){
+        if(anos[i] >= anoReverso){ 
+            resultado.push(anos[i]);
+}
+    }
+    return resultado;
+}
+console.log(encotrarAnoReverso(2015));
+console.log(encotrarAnoReverso(2021));
 console.log(encontrarAno(2021));
+console.log(encontrarAno(2035));
