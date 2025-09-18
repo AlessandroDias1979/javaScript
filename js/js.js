@@ -51,6 +51,29 @@ function calcularValorDaCompra(valorDaCompra, possuiOuNaoConvenio, compraOuNaoCo
 
     }
 }
+/* Função para calcular o valor da compra sem desconto se o valor for maior que 100 */
+
+function semDesconto(valorDaCompra, possuiOuNaoConvenio, compraOuNaoComCartaoDaLoja){
+    if(valorDaCompra >= 100 && possuiOuNaoConvenio && compraOuNaoComCartaoDaLoja ){
+        return valorDaCompra; 
+    } 
+    if (valorDaCompra < 100 && possuiOuNaoConvenio && compraOuNaoComCartaoDaLoja ){
+        return valorDaCompra - valorDaCompra * 0.15
+    } 
+    if (valorDaCompra < 100 || possuiOuNaoConvenio || compraOuNaoComCartaoDaLoja ){
+        return valorDaCompra - valorDaCompra * 0.10
+    } 
+    else {
+        return valorDaCompra;
+}
+}
+
+console.log(`Não ouve desconto por que passou do valor de R$ 100 e você gasotu R$ `+ semDesconto(150, true, true)); // 150
+console.log(`Voce teve um desconto de 15% e você gastou R$ ` + semDesconto(90, true, true)); // 76.5
+
+
+
+
 
 /*resultados dos testes*/
 
@@ -77,6 +100,7 @@ function encontrarAno(ano){
     return resultado;
 }
 
+/* Função para encontrar o ano mais distante */
 function encotrarAnoReverso(anoReverso){
 
     const resultado = [];
@@ -87,7 +111,15 @@ function encotrarAnoReverso(anoReverso){
     }
     return resultado;
 }
+
+/* Resultados dos testes */
+
 console.log(encotrarAnoReverso(2015));
 console.log(encotrarAnoReverso(2021));
 console.log(encontrarAno(2021));
 console.log(encontrarAno(2035));
+
+anos.forEach(function(ano){
+    console.log(ano);
+})
+
