@@ -71,8 +71,9 @@ function encontrarAno(ano){
     for(let i = 0; i < anos.length; i++){
         if(anos[i] <= ano){
 
-            return anos[i];
+            resultado.push(anos[i]);
         }
     } 
+    return resultado;
 }
 console.log(encontrarAno(2021));
