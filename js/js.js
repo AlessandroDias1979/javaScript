@@ -136,7 +136,7 @@ function musicasFavoritas(artista){
 
         'Coldplay': ['Yellow', 'Fix You', 'The Scientist'],
     };
-    return musicas[artista] || [];
+    return musicas[artista];
 
 }
 console.log(musicasFavoritas('Linkin Park'));
@@ -156,3 +156,26 @@ function calcularBananas(alunos){
     const bananasPorAluno = 2; // 2 bananas por aluno
 }
 
+/*Faça a modelagem e definição de uma lista dos seus filmes. Cada filme deve
+conter pelo menos 3 propriedades (das não especificadas) e pelo menos um
+deles deve ser um array de number . Você deve indicar se o filme está na sua
+lista de favoritos ou não. Além disso, seu filme deve possuir uma lista de
+gêneros. */
+
+const filmes = {
+    titulo: 'Star Wars',
+    ano: 1977,
+    diretor: 'George Lucas',    
+}
+console.log(filmes);
+
+const filmes2 = {
+    titulo: 'Matrix',
+    ano: 1999,
+    diretor: 'Irmãos Wachowski',
+}
+console.log(filmes2);
+
+const notas = {
+    
+}
