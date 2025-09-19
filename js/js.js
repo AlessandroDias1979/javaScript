@@ -163,19 +163,19 @@ lista de favoritos ou não. Além disso, seu filme deve possuir uma lista de
 gêneros. */
 
 const filmes = {
-    titulo: 'Star Wars',
-    ano: 1977,
-    diretor: 'George Lucas',    
+    filme1: {
+        titulo: 'Star Wars',
+        ano: 1977,
+        diretor: 'George Lucas',
+    },
+    filme2: {
+        titulo: 'Senhor dos Anéis',
+        ano: 2001,
+        diretor: 'Peter Jackson',
+    }
 }
-console.log(filmes);
+const favorito = filmes.filme1;
+console.log(favorito);
+console.log(`O filme favorito é ${favorito.titulo}, lançado em ${favorito.ano} e dirigido por ${favorito.diretor}`);
 
-const filmes2 = {
-    titulo: 'Matrix',
-    ano: 1999,
-    diretor: 'Irmãos Wachowski',
-}
-console.log(filmes2);
 
-const notas = {
-    
-}
