@@ -101,6 +101,7 @@ function encontrarAno(ano){
 }
 
 /* Função para encontrar o ano mais distante */
+
 function encotrarAnoReverso(anoReverso){
 
     const resultado = [];
@@ -121,5 +122,37 @@ console.log(encontrarAno(2035));
 
 anos.forEach(function(ano){
     console.log(ano);
-})
+}
+)
+
+/*Crie uma função em JavaScript que retorna um array das suas músicas favoritas.
+Essa função deve receber como parâmetro qual o nome do artista.
+Você deve implementar pelo menos dois artistas, com pelo menos uma música
+cada. Se a função receber o nome de um artista que você não definiu então deve ser retornado um array vazio.*/
+
+function musicasFavoritas(artista){
+    const musicas = {
+        'Linkin Park': ['In the End', 'Numb', 'Crawling'], 
+
+        'Coldplay': ['Yellow', 'Fix You', 'The Scientist'],
+    };
+    return musicas[artista] || [];
+
+}
+console.log(musicasFavoritas('Linkin Park'));
+console.log(musicasFavoritas('Coldplay'));
+
+/*Em mercados, a compra de bananas é feita por quilos.
+Vai acontecer um evento escolar que precisa calcular quantos quilos de banana serão necessários para 200 alunos.
+Sendo que as bananas serão distribuídas no turno da manhã e no turno da noite.
+Faça uma função que irá gerar quantos quilos a escola deve comprar.
+Considere que cada banana pesa em média 90g.
+Além disso, considere uma marge de erro de 20%.*/
+
+function calcularBananas(alunos){
+    const pesoBanana = 0.09; // peso em kg
+
+    const margemDeErro = 1.2; // 20% de margem de erro
+    const bananasPorAluno = 2; // 2 bananas por aluno
+}
 
