@@ -1,3 +1,4 @@
+
 const filmes = [
     {
     "nome": "Star Wars",
@@ -33,5 +34,15 @@ const filmes = [
     });
     console.log(filmes);
 
-    
+    const filmeFantasia = filmes.filter(filme => filme.gênero.includes("Fantasia"));
+    console.log(filmeFantasia);
 
+    const filmeAcaoFiccaoCientifica = filmes.filter(filme => filme.gênero.includes("Ação") ||
+    filme.gênero.includes("Ficção Científica"));
+      
+    console.log(filmeAcaoFiccaoCientifica);
+
+    const filmeLancadoAntes2000 = filmes.filter(filme => filme.lancamento < 2000);
+    console.log(filmeLancadoAntes2000);
+
+    
