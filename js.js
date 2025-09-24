@@ -1,4 +1,5 @@
 
+
 const filmes = [
     {
     "nome": "Star Wars",
@@ -30,7 +31,6 @@ const filmes = [
     let id = 1;
     filmes.forEach(filme => {
         filme.id = id++;
-
     });
     console.log(filmes);
 
@@ -44,5 +44,39 @@ const filmes = [
 
     const filmeLancadoAntes2000 = filmes.filter(filme => filme.lancamento < 2000);
     console.log(filmeLancadoAntes2000);
+
+    const tarefas =[ 
+        {
+            titulo: "Passear com o cachorro",
+            concluida: false,
+            dias: 10,
+        },
+        {
+            titulo:"Comprar leite",
+            concluida: false,
+            dias: 5,
+        },
+        {
+            titulo:"Lavar louça",
+            concluida: true,
+            dias: 60,
+        },
+        {
+            titulo:"Estudar programação",
+            concluida: false,
+            dias: 30,
+        }
+    ]
+
+    /*Faça uma função que retorne todas as tarefas que estão concluídas.*/
+
+    const tarefasConcluidas = tarefas.some(tarefa => tarefa.concluida === true);
+    console.log(tarefasConcluidas);
+    
+    const tarefasNaoConcluidas = tarefas.every(tarefa => tarefa.concluida === false);
+    console.log(tarefasNaoConcluidas);
+
+
+
 
     
