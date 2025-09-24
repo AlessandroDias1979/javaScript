@@ -65,8 +65,8 @@ const filmes = [
             titulo:"Estudar programação",
             concluida: false,
             dias: 30,
-        }
-    ]
+        },
+    ];
 
     /*Faça uma função que retorne todas as tarefas que estão concluídas.*/
 
@@ -75,6 +75,28 @@ const filmes = [
     
     const tarefasNaoConcluidas = tarefas.every(tarefa => tarefa.concluida === false);
     console.log(tarefasNaoConcluidas);
+
+    const medicos = [
+  {
+    nome: 'Leticia',
+    sobrenome: 'Costana',
+    genero: 'feminino',
+  },
+  {
+    nome: 'Adimaldo',
+    sobrenome: 'Pinto',
+    genero: 'masculino',
+  },
+  {
+    nome: 'Noah',
+    sobrenome: 'Lutus',
+    genero: 'nao-binario',
+  },
+];
+
+/*Faça uma função que irá retornar um array de objetos.
+Essa função deve adicionar uma nova propriedade de
+nome apresentacao que será gerada conforme o gênero da pessoa:*/
 
 
 
